@@ -1,0 +1,10 @@
+
+test_IMMEDIATE.elf:     file format elf64-littleaarch64
+
+
+Disassembly of section .text:
+
+0000000000400000 <_start>:
+  400000:	d2e01fe1 	mov	x1, #0xff000000000000      	// #71776119061217280
+  400004:	91437423 	add	x3, x1, #0xdd, lsl #12
+  400008:	d503203f 	yield

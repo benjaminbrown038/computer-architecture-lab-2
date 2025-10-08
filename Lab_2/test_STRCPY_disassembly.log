@@ -5,9 +5,10 @@ test_STRCPY.elf:     file format elf64-littleaarch64
 Disassembly of section .text:
 
 0000000000000000 <_start>:
-   0:	d2800a00 	mov	x0, #0x50                  	// #80
-   4:	52800ca5 	mov	w5, #0x65                  	// #101
-   8:	52800cc6 	mov	w6, #0x66                  	// #102
+
+   0:	d2800a00 	mov	x0, #0x50 
+   4:	52800ca5 	mov	w5, #0x65                  	
+   8:	52800cc6 	mov	w6, #0x66                  	
    c:	38000005 	sturb	w5, [x0]
   10:	38001006 	sturb	w6, [x0, #1]
   14:	3800201f 	sturb	wzr, [x0, #2]
